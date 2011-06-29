@@ -383,7 +383,7 @@ function pingback_decode_response($xml, &$message) {
 	/* Failure */
 	if (preg_match('#<fault>(.+)</fault>#s', $xml, $fault)) {
 		$code = PINGBACK_ERROR;
-		if (preg_match_all('#<name>(\w+)</name>.+?<value>(.+?)</value>#s', $fault[1], $values)) {
+		if (preg_match_all('#<name>(\w+)</name>.*?<value>(.+?)</value>#s', $fault[1], $values)) {
 			$code = $values[2][0];
 			$message = $values[2][1];
 		}
