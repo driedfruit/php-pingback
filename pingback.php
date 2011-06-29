@@ -356,7 +356,7 @@ function post_remote_xml($url, $xml) {
 function get_remote_head($url) {
 	$resp = '';
 	$purl = parse_url($url);
-	if ($purl['query']) $purl['path'] .= '?'.$purl['query'];
+	if (isset($purl['query'])) $purl['path'] .= '?'.$purl['query'];
 	if (!isset($purl['port'])) $purl['port'] = 80;
 	$fp = fsockopen($purl['host'], $purl['port'], $errno, $errstr, 30);
 	if ($fp) {
