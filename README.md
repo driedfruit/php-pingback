@@ -1,6 +1,13 @@
-TODO: Clean up this readme (currently it's just a comment copy-past)
+TODO: Clean up this readme (currently it's just a copy-paste from comments)
 
-LightPingBack is a light-weight pingback consumer/provider.
+NOTE:
+
+Do not confuse with https://github.com/tedeh/pingback-php which is
+a similar library.
+
+# php-pingback 
+
+Light-weight pingback consumer/provider.
 Implements this spec:
 http://www.hixie.ch/specs/pingback/pingback (see also http://www.xmlrpc.com/spec)
 License: 2-clause BSD -- driedfruit
@@ -18,7 +25,7 @@ To receive pingbacks:
  You must specifiy a pingback endpoint, i.e. some URI on your end that will
  handle remote requests, for example "http://example.org/pingback"
   a) using header('X-Pingback: ' .   
-  b) using <link rel="pingback" href=" ( make sure to close it validly )
+  b) using &lt; link rel="pingback" href=" ( make sure to close it validly )
 in each and every resource that you wish to make pingable.
 ...
 //Then, wait on the endpoint to receive requests:

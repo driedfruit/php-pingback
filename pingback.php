@@ -1,6 +1,6 @@
 <?php
 /**
- * LightPingBack is a light-weight pingback consumer/provider.
+ * php-pingback is a light-weight pingback consumer/provider.
  * Implements this spec:
  * http://www.hixie.ch/specs/pingback/pingback (see also http://www.xmlrpc.com/spec)
  * License: 2-clause BSD -- driedfruit
